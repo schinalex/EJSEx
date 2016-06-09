@@ -3,12 +3,16 @@
 // --------------------
 // Deep comparison
 // --------------------
-const queue = () => {
-  this.enqueue = () => {
-    console.log('yey!')
+const Queue = class {
+  constructor () {
+    this.enqueue = () => {
+      console.log('enqueued')
+    }
   }
 }
 
+let newQueue = new Queue()
+console.log(newQueue)
 const deepEqual = (obj1, obj2) => {
   let equal = true
   for (let property of obj1) {
