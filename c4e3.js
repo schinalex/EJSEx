@@ -45,4 +45,5 @@ const recursiveNth = (list, index) => {
 
 console.log(listToArray(arrayToList([1, 2, 3, 4, 5])))
 console.log(prepend(10, prepend(20, null)))
-console.log(recursiveNth(arrayToList([10, 20, 30]), -1))
+console.log(recursiveNth(arrayToList([10, 20, 30]), 1))
+console.log(nth(arrayToList([1, 2, 3, 4, 5]), 3))
